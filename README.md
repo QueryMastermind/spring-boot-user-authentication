@@ -68,12 +68,6 @@ git clone https://github.com/QueryMastermind/spring-boot-user-authentication.git
 4. Run the Spring Boot application
 5. Test APIs using Postman
 
-## 📸 Screenshots (Postman Testing)
-
-*Add screenshots of API requests and responses from Postman*
-
----
-
 ## 📚 What I Learned
 
 * REST API design principles
