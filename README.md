@@ -60,7 +60,7 @@ All APIs were tested and validated using **Postman**, following proper HTTP meth
 1. Clone the repository
 
 ```bash
-git clone https://github.com/QueryMastermind/spring-boot-user-authentication.git
+git clone https://github.com/Uday-Adlakha/Crud-Rest-Api-Project-Spring-Boot.git
 ```
 
 2. Open the project in IDE (IntelliJ / Eclipse)
