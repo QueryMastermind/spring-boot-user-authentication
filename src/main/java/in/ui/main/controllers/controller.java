@@ -22,12 +22,12 @@ public class controller {
 	@Autowired
 	private UserService userservice;
 	
-	@PostMapping("/AddUser")
+	@PostMapping("/create ")
 	public Users AddNewUser(@RequestBody Users user) {
 		 return userservice.addNewUser(user);
 	}
 	
-	@GetMapping("/ShowUsers")
+	@GetMapping("/all")
 	public List<Users> showAllUsers(){
 		return userservice.ShowAllUsers();
 	}
@@ -43,7 +43,7 @@ public class controller {
 		}
 	}
 	
-	@PutMapping("/user/{id}")
+	@PutMapping("/user/update/{id}")
 	public ResponseEntity<Users> updateUserByid(@PathVariable int id, @RequestBody Users user){
 		Users UpdatedUser=userservice.updateUser(id, user);
 		if(UpdatedUser != null) {
@@ -53,7 +53,7 @@ public class controller {
 		}
 	}
 	
-	@DeleteMapping("/user/{id}")
+	@DeleteMapping("/user/delete/{id}")
 	public ResponseEntity<String> deleteuser(@PathVariable int id){
 		boolean deletedUser =userservice.deleteuser(id);
 		if(deletedUser){			
